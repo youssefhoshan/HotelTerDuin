@@ -1,6 +1,6 @@
 # Hotel Ter Duin - Booking Site
 
-![Hotel Ter Duin](hotel_ter_duin.jpg)
+![Hotel Ter Duin](logo.png)
 
 Hotel Ter Duin is a school project aimed at creating a booking site for a fictional hotel. This project is developed by Youssef Hoshan, Jean Carlos de la Court, Abdessamad Agalf, Patrick Agramonte, Uriech Marchena as part of ROCvA curriculum. The purpose of this project is to showcase the ability to design and implement a web application using HTML, CSS, and JavaScript.
 
