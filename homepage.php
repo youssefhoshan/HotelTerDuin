@@ -12,38 +12,38 @@
 
   <main>
     <section class="welcome-section">
-      <h2>Welcome to Hotel Duin</h2>
-      <p>Experience luxury and comfort in our beautiful hotel rooms.</p>
+      <h2>Welcome bij Hotel Duin</h2>
+      <p>Ervaar luxe en comfort in onze prachtige hotelkamers.</p>
     </section>
 
     <section class="room-section">
   <div class="room-list">
     <div class="room-card">
       <img src="images/room1.jpg" alt="Room 1">
-      <h3>Standard Room</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <a href="#" class="btn">Book Now</a>
+      <h3>Standaard Kamer</h3>
+      <p> Een comfortabele en betaalbare optie voor gasten die op zoek zijn naar een aangenaam verblijf.</p>
+      <a href="rooms.php" class="btn">Boek Nu</a>
     </div>
     <div class="room-card">
       <img src="images/room2.jpg" alt="Room 2">
-      <h3>Deluxe Room</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <a href="#" class="btn">Book Now</a>
+      <h3>Deluxe Kamer</h3>
+      <p>Een ruimere en luxueuzere optie voor gasten die wat extra comfort en stijl wensen.</p>
+      <a href="rooms.php" class="btn">Boek Nu</a>
     </div>
     <div class="room-card">
       <img src="images/room3.jpg" alt="Room 3">
-      <h3>Suite Room</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <a href="#" class="btn">Book Now</a>
+      <h3>Suite Kamer</h3>
+      <p>De meest exclusieve en luxe accommodatie in het hotel</p>
+      <a href="rooms.php" class="btn">Boek Nu</a>
     </div>
   </div>
 </section>
 <section class="about-section">
   <div class="about-content">
-    <h2>About Us</h2>
-    <p>Welcome to Hotel Duin, a luxury hotel located in the heart of a beautiful coastal town. We offer comfortable accommodations, exceptional service, and a memorable experience for all our guests. Whether you're here for a relaxing getaway or a business trip, we strive to provide you with a delightful stay.</p>
-    <p>Our hotel features a range of amenities, including a spa, fitness center, and fine dining restaurant. Our dedicated staff is available 24/7 to ensure your needs are met and to provide recommendations for local attractions and activities.</p>
-    <a href="contact.php" class="btn">Contact Us</a>
+    <h2>Over Ons</h2>
+    <p>Welkom bij Hotel Duin, een luxe hotel gelegen in het hart van een prachtige kustplaats. Wij bieden comfortabele accommodaties, uitzonderlijke service en een gedenkwaardige ervaring voor al onze gasten. Of u nu hier bent voor een ontspannen uitje of een zakenreis, we streven ernaar u een heerlijk verblijf te bieden.</p>
+    <p>Ons hotel beschikt over een scala aan voorzieningen, waaronder een spa, fitnesscentrum en een restaurant met verfijnde gerechten. Ons toegewijde personeel is 24/7 beschikbaar om aan uw behoeften te voldoen en aanbevelingen te doen voor lokale bezienswaardigheden en activiteiten.</p>
+    <a href="contact.php" class="btn">Neem Contact Op</a>
   </div>
   <div class="hotel-image">
     <img src="images/hotel.jpg" alt="Hotel Duin">

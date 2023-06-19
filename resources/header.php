@@ -10,9 +10,9 @@
     <nav>
       <ul>
         <li><a href="homepage.php">Home</a></li>
-        <li><a href="rooms.php">Rooms</a></li>
-        <li><a href="reservation.php">Reservation</a></li>
+        <li><a href="rooms.php">Kamers</a></li>
         <li><a href="contact.php">Contact</a></li>
+        <li><a href="login.php">Login</a></li>
       </ul>
     </nav>
   </header>

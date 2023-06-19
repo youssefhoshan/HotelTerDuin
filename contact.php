@@ -10,36 +10,37 @@
 </head>
 <body>
     <?php include 'resources/header.php'; ?>
-    <main>
-        <section class="information-section">
-            <h2>Hotel Information</h2>
-            <p>Welcome to Hotel Duin, a luxury hotel located in the heart of a beautiful coastal town. Our hotel offers stunning ocean views, comfortable accommodations, and top-notch amenities for a memorable stay.</p>
-            <p>At Hotel Duin, we pride ourselves on providing exceptional service to our guests. Our friendly and attentive staff is available 24/7 to assist you with any inquiries or requests you may have.</p>
-            <p>Explore the local attractions, enjoy the beautiful beach, and indulge in the finest dining experiences at our onsite restaurant. We also offer a range of amenities, including a spa, fitness center, and conference facilities for your convenience.</p>
-        </section>
+    <section class="information-section">
+    <h2>Hotelinformatie</h2>
+    <p>Welkom bij Hotel Duin, een luxe hotel gelegen in het hart van een prachtige kustplaats. Ons hotel biedt adembenemend uitzicht op de oceaan, comfortabele accommodaties en eersteklas voorzieningen voor een onvergetelijk verblijf.</p>
+    <p>Bij Hotel Duin zijn we trots op het bieden van uitzonderlijke service aan onze gasten. Ons vriendelijke en attente personeel staat 24/7 voor u klaar om u te helpen met vragen of verzoeken die u heeft.</p>
+    <p>Ontdek de lokale bezienswaardigheden, geniet van het prachtige strand en laat u verwennen met culinaire hoogstandjes in ons eigen restaurant. We bieden ook een scala aan voorzieningen, waaronder een spa, fitnesscentrum en conferentiefaciliteiten voor uw gemak.</p>
+  </section>
 
-        <section class="contact-section">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <p>If you have any questions or would like to make a reservation, please don't hesitate to contact us:</p>
-                <ul>
-                    <li>Address: 123 Ocean Avenue, Coastal Town</li>
-                    <li>Phone: +1 123-456-7890</li>
-                    <li>Email: info@hotelduin.com</li>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6933842.777338979!2d-122.21189459888377!3d31.942839972853083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d8ebba2e05be67%3A0x71fb7360c04a9b6d!2sCuatro%20Cuatros!5e0!3m2!1snl!2snl!4v1685738545660!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </ul>
-            </div>
-            <div class="contact-form">
-                <h2>Get in Touch</h2>
-                <form action="send_email.php" method="post">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+  <section class="contact-section">
+  <h2>Contacteer ons</h2>
+  <div class="contact-info">
+    <p>Als u vragen heeft of een reservering wilt maken, aarzel dan niet om contact met ons op te nemen:</p>
+    <ul>
+      <li>Adres: 123 Ocean Avenue, Kustplaats</li>
+      <li>Telefoon: +1 123-456-7890</li>
+      <li>E-mail: info@hotelduin.com</li>
+    </ul>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6933842.777338979!2d-122.21189459888377!3d31.942839972853083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d8ebba2e05be67%3A0x71fb7360c04a9b6d!2sCuatro%20Cuatros!5e0!3m2!1snl!2snl!4v1685738545660!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="contact-form">
+    <h2>Neem contact op</h2>
+    <form action="send_email.php" method="post">
+      <input type="text" name="name" placeholder="Uw Naam" required>
+      <input type="email" name="email" placeholder="Uw E-mail" required>
+      <textarea name="message" placeholder="Uw Bericht" required></textarea>
+      <button type="submit">Verstuur Bericht</button>
+    </form>
+  </div>
+</section>
+</
+  </section>
+</main>
     <?php include 'resources/footer.php'; ?>
 </body>
 </html>
