@@ -63,9 +63,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
-    $mail->Username = 'youssefhoshan@outlook.com';
-    $mail->Password = 'Wessef123';
-    $mail->setFrom('youssefhoshan@outlook.com', 'Youssef Hoshan');
+    $mail->Username = 'hotelterduin@outlook.com';
+    $mail->Password = 'Hotel123';
+    $mail->setFrom('hotelterduin@outlook.com', 'Test Test');
     $mail->addAddress($email, $name);
     $mail->Subject = 'Factuur voor kamerhuur';
     $mail->Body = $invoice;

@@ -11,6 +11,21 @@
 <body>
 <?php include 'resources/header.php';?>
 
+<form class="login-form" action="login_verwerken.php" method="POST">
+    <div class='container-login'>
+           <label for="username">Gebruikersnaam:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Wachtwoord:</label>
+            <input type="password" class="password" id="password" name="password" required> <br>
+
+            <input type="submit" value="Inloggen">
+    </div>
+ 
+</form>
+
+
+
 <?php include 'resources/footer.php';?>
 </body>
 </html>
