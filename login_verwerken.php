@@ -1,36 +1,37 @@
 <?php
-session_start(); // Start de sessie
+session_start();
 
-include './resources/db_connect.php'; // Inclusie van het databaseconfiguratiebestand
+include 'resources/db_connect.php'; // Include the database connection
 
-// Verkrijg de ingevulde inloggegevens
-$username = $_POST['username'];
-$password = $_POST['password'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-try {
-    // Bereid de query voor om de gebruiker te controleren
-    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username AND password = :password");
+    // Prepare the SQL statement
+    $stmt = $conn->prepare("SELECT * FROM terduin.users WHERE username = :username");
     $stmt->bindParam(':username', $username);
-    $stmt->bindParam(':password', $password);
     $stmt->execute();
 
-    if ($stmt->rowCount() == 1) {
-        // Inloggegevens zijn correct, sla de gebruikersinformatie op in de sessie
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Check if the user exists and verify the password
+    if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
         $_SESSION['role'] = $user['role'];
 
-        // Doorsturen naar de gewenste pagina na succesvol inloggen
-        header("Location: homepage.php"); // Vervang "home.php" door de gewenste startpagina na het inloggen
-        exit();
+        // Redirect to the admin page if the user is an admin
+        if ($user['role'] === 'admin') {
+            header("Location: admin.php");
+            exit();
+        } else {
+            header("Location: homepage.php");
+            exit();
+        }
     } else {
-        // Inloggegevens zijn onjuist, geef een foutmelding weer
-        echo "Ongeldige gebruikersnaam of wachtwoord.";
+        echo "Invalid username or password";
     }
-} catch(PDOException $e) {
-    echo "Fout bij het uitvoeren van de query: " . $e->getMessage();
 }
 
-$conn = null; // Sluit de databaseverbinding
+$conn = null; // Close the database connection
 ?>

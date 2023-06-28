@@ -9,23 +9,23 @@
     <title>Login</title>
 </head>
 <body>
-<?php include 'resources/header.php';?>
+    <?php include 'resources/header.php';?>
 
-<form class="login-form" action="login_verwerken.php" method="POST">
-    <div class='container-login'>
-           <label for="username">Gebruikersnaam:</label>
-            <input type="text" id="username" name="username" required>
+    <form class="login-form" action="login_verwerken.php" method="POST">
+        <div class='container-login'>
+            <label for="username">Gebruikersnaam:</label>
+            <input placeholder="Gebruikersnaam..." type="text" id="username" name="username" required>
 
             <label for="password">Wachtwoord:</label>
-            <input type="password" class="password" id="password" name="password" required> <br>
+            <input placeholder="Wachtwoord..." type="password" class="password" id="password" name="password" required> <br>
 
             <input type="submit" value="Inloggen">
+            <div class="registrate-button">
+        <a class="registration-link" href="registration.php">Registreer</a>
     </div>
- 
-</form>
+        </div>
+    </form>
 
-
-
-<?php include 'resources/footer.php';?>
+    <?php include 'resources/footer.php';?>
 </body>
 </html>
